@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+:root {
+  /* Cores Principais */
+  --cor-cabecalho: #2c2520;
+  --cor-destaque-ouro: #ba9443;
+  --cor-logo-escura: #846226;
+  
+  /* Cores de Fundo */
+  --cor-fundo-site: #ececec;
+  --cor-fundo-card: #ffffff;
+  
+  /* Cores de Texto */
+  --cor-texto-escuro: #292929;
+  --cor-titulo-azul: #1e3d59;
+  --cor-link-azul: #3498db;
+  --cor-rodape: #333333;
+
+  /*Letras usadas*/
+  --fonte-titulo: 'Merriweather', 'Georgia', serif;
+  --texto-menu: 'Open Sans', "Lato" "Roboto" sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+body { /*Divisão de três tabelas para (header, main e footer),congiguração das fontes principas e o tamanho geral do layout*/
+    display: grid;/* Cria as 3 linhas: cabeçalho automático, conteúdo se expande, rodapé automático */
+    grid-template-rows: auto 1fr auto; /* Define que o conteúdo máximo do site fica centralizado em uma largura confortável */
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--cor-fundo-site);
+    color: var(--cor-texto-escuro);
+    font-family: 'Roboto';
+    font-size: 16px; /* Tamanho ideal para leitura de parágrafos */
+    line-height: 1.6; /* Dá um espaçamento entre linhas confortável para os olhos */
+}
+
+header {
+  display: flex;
+  align-items: center; /* Centraliza logo, links e busca verticalmente */
+  justify-content: space-between; /* Empurra o logo para a esquerda e a busca para a direita */
+  padding: 0px 25px;
+  background-color: var(--cor-rodape);
+ box-shadow: 0px 0px 9px 2px #2929293f;
+}
+
+header h1 {
+    color: var(--cor-fundo-card);
+    font-size: 1.5em ;
+}
+
+header a {
+    padding: 0px 5px;
+    text-decoration: none;
+    color: var(--cor-fundo-card);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+main { /*Divisão do main para duas tabelas uma para o conteudo principal e a barra de do conteudo segundario*/
+    display: grid; /* Divide o meio em duas colunas: 3 partes para o texto do artigo e 1 parte para a barra lateral */
+    grid-template-columns: 3fr 1fr;
+    gap: 30px; /* Dá o espaço de respiro entre o texto e a barra lateral */
+}
+
+
+/* 2. Aplicando a fonte apenas para os Títulos */
+ h2, h3 {
+  font-family: 'Merriweather', 'Georgia', serif;
+  font-weight: bold; /* Deixa o título em negrito */
+}
+
+h1 {
+    font-size: 3em;
+    font-family: var(--fonte-titulo);
+}
+
+article {
+    background-color: var(--cor-fundo-card);
+    padding: 30px 90px;
+    box-shadow: 0px 0px 9px 2px #2929293f;
+}
+
+.livros-destaque {
+    background-color: var(--cor-fundo-card);
+    padding: 30px;
+    height: 700px;
+    box-shadow: 0px 0px 9px 2px #2929293f;
+}
+
+.livros-destaque h2 {
+    color: #ba9443;
+}
+
+.livros-destaque hr {
+    color: var(--cor-fundo-card);
+}
+
+
+footer {
+    background-color: var(--cor-rodape);
+    color: var(--cor-fundo-card);
+    padding: 20px 0px 20px 90px;
+    box-shadow: 0px 0px 9px 2px #2929293f;
+    
+}
+
+footer p {
+}
+
+
+
+
+
+

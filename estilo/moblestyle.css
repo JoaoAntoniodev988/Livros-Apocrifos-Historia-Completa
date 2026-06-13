@@ -26,11 +26,10 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 2.5em;
     color: var(--texto);
-    background-color: var(--respiro);
+    background-color: var(--fundo-principal);
     font-size: 0.9em;
     width: 100vw;
     height: 100vh;
-    background-image: url(../imagem/Gemini_Generated_Image_xny8y5xny8y5xny8.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -51,7 +50,7 @@ header {
     align-items: center;
     flex-wrap: nowrap;
     max-width: 1200px; /* Opcional: define um limite de largura para o site */
-    background-color: var(--Fundo-painel);
+    background-color: #1f1c19;
     margin: auto;
     padding: 0px 50px;
 }
@@ -91,11 +90,12 @@ nav#doacao {
     margin: 0 auto;    /* Centraliza o site na tela */
     padding: 40px;
     width: 90%;
-    background-color: var(--fundo-segundario);
+    background-color: #f1eada ;
    
 }
 
 .caixa-esquerda {
+    background-color: var(--respiro);
     min-height: 500px;  /* Altura mínima para visualização */
     border-right: 5px solid var(--texto-destaque);
 }
@@ -177,7 +177,7 @@ footer {
     color: var(--fundo-segundario);
     font-family: var(--fonte-padrao);
     max-width: 1200px; /* Opcional: define um limite de largura para o site */
-    background-color: var(--Fundo-painel);
+    background-color: #1f1c19;
     margin: auto;
     padding: 0px 50px;
 }
