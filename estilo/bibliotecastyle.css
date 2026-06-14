@@ -76,12 +76,33 @@ main { /*Divisão do main para duas tabelas uma para o conteudo principal e a ba
     gap: 30px; /* Dá o espaço de respiro entre o texto e a barra lateral */
 }
 
+.lsta-de-livros {
+     background-color: var(--cor-fundo-card);
+    padding: 30px 90px;
+    box-shadow: 0px 0px 9px 2px #2929293f;
+    border-right: 8px solid #846226;
+    border-left: 8px solid #846226;
+}
+
+.lsta-de-livros h2 {
+    text-align: center;
+    margin: 10px;
+}
+
+.lsta-de-livros h3 {
+    margin: 10px;
+}
+
+.lsta-de-livros ul {
+    padding: 0px 40px;
+}
 
 /* 2. Aplicando a fonte apenas para os Títulos */
  h2, h3 {
   font-family: 'Merriweather', 'Georgia', serif;
   font-weight: bold; /* Deixa o título em negrito */
 }
+
 
 h1 {
     font-size: 3em;
@@ -114,6 +135,13 @@ article {
     color: var(--cor-fundo-card);
 }
 
+aside {
+    background-color: var(--cor-fundo-card);
+    color: var(--cor-titulo-azul);
+    padding:10px 30px;
+    border: 2px solid #846226;
+   
+}
 
 footer {
     border-top: 4px solid #846226;
